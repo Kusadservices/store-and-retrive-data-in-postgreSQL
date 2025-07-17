@@ -1,6 +1,6 @@
-const { request } = require('express');
+const { require  } = require('express');
 const { Pool } = require('pg');
-request('dotenv').config();
+require('dotenv').config();
 
 const pool = new Pool({
   user: process.env.DB_USER,
